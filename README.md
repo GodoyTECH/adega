@@ -69,3 +69,12 @@ npm run dev
 - Dashboard com métricas em tempo real.
 - Relatórios com filtros por período.
 - Preparar integrações futuras (Cloudinary, NFC-e, delivery, multi-loja).
+
+
+## Netlify (importante para evitar erro de build)
+- **Base directory**: deixe vazio (`/`).
+- **Build command**: `npm run build`
+- **Publish directory**: `.next`
+- **Não use** comando de monorepo com `pnpm --filter ...` para este repositório.
+- Se existir comando antigo salvo no painel da Netlify, substitua manualmente.
+
